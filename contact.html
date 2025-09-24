@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Creative254</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Creative<span class="accent">254</span></a>
+      <nav class="main-nav" id="mainNav4">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="navToggle4" class="nav-toggle" aria-controls="mainNav4" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact Us</h1>
+    <p>If you'd like to book a consultation or enquire about services, use the form below.</p>
+
+    <form id="contactForm" class="contact-form" novalidate>
+      <label>
+        Name
+        <input type="text" id="name" name="name" required>
+        <span class="error" id="errName" aria-live="polite"></span>
+      </label>
+
+      <label>
+        Email
+        <input type="email" id="email" name="email" required>
+        <span class="error" id="errEmail" aria-live="polite"></span>
+      </label>
+
+      <label>
+        Subject
+        <input type="text" id="subject" name="subject">
+      </label>
+
+      <label>
+        Message
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <span class="error" id="errMessage" aria-live="polite"></span>
+      </label>
+
+      <button type="submit" class="btn">Send Message</button>
+      <p id="formSuccess" class="muted" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year4"></span> Creative254 • Trojan Horse Africa</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
